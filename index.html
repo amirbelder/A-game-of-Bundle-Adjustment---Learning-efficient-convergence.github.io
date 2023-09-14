@@ -19,42 +19,95 @@
         </nav>
     </header>
 
-    <!-- Home Section -->
-    <section id="home">
+     <header>
+        <nav>
+            <ul>
+                <li><a href="#abstract">Abstract</a></li>
+                <li><a href="#architecture">Architecture</a></li>
+                <li><a href="#contributions">Contributions</a></li>
+                <li><a href="#code">Code</a></li>
+                <li><a href="#bibtex">Bibtex</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Authods Section -->
+    <section id="abstract">
         <div class="container">
-            <h1>Welcome to Your GitHub Page</h1>
-            <p>Your introduction or tagline goes here.</p>
+            <h1>Authos</h1>
+            <p>Amir Belder, Refael Vivanti, Ayellet Tal.</p>
+        </div>
+    </section>
+    
+    <!-- Abstract Section -->
+    <section id="abstract">
+        <div class="container">
+            <h1>Abstract</h1>
+            <p>Bundle adjustment is the common way to solve localization and mapping. It is an iterative process in which a system of non-linear equations is solved using two optimization methods, weighted by a damping factor. In the classic approach, the latter is chosen heuristically by the Levenberg-Marquardt algorithm on each iteration. This might take many iterations, making the process computationally expensive, which might be harmful to real-time applications. We propose to replace this heuristic by viewing the problem in a holistic manner, as a game, and formulating it as a reinforcement-learning task. We set an environment which solves the non-linear equations and train an agent to choose the damping factor in a learned manner. We demonstrate that our approach considerably reduces the number of iterations required to reach the bundle adjustment's convergence, on both synthetic and real-life scenarios. We show that this reduction benefits the classic approach and can be integrated with other bundle adjustment acceleration methods.
+             <img src="rl_2.png" alt="RdAM" width="auto" height="165px" >
+            </p>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
+      <!-- Contributions Section -->
+    <section id="contributions">
         <div class="container">
-            <h2>About Me</h2>
-            <p>Write a brief description of yourself here.</p>
+            <h1>Contributions</h1>
+            <p>This paper makes the following contributions: We propose a general and unified approach that learns the ideal value of λ. It can be integrated within other
+BA acceleration methods.
+2. We propose a network that utilizes this approach using
+Reinforcement Learning. We show that it achieves a
+significant reduction in the number of iterations and
+running time. On the KITTI benchmark for instance,
+a 1/5 of the iterations were required, which led to an
+overall speedup of 3. </p>
+    </section>
+
+    <!-- Architecture Section -->
+    <section id="architecture">
+        <div class="container">
+            <h1>Architecture</h1>
+            <p>We use SAC as our RL framework, and utilised a simple atchitecture for all netowrks:
+                <img src="arch_2.png" alt="RdAM" width="auto" height="165px" >
+                .</p>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio">
+  
+
+    <!-- Code Section -->
+    <section id="code">
         <div class="container">
-            <h2>Portfolio</h2>
-            <!-- Add your portfolio items here -->
-            <!-- Example:
-            <div class="portfolio-item">
-                <img src="project1.jpg" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Description of project 1.</p>
-            </div>
-            -->
+            <h1>Code</h1>
+            <p>The code will be available soon. </p>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
+     <!-- Acknowledgements Section -->
+    <section id="code">
         <div class="container">
-            <h2>Contact Me</h2>
-            <p>Contact information and a contact form can go here.</p>
+            <h1>Acknowledgements</h1>
+            <p>We gratefully acknowledge the support of the Israel Science Foundation (ISF) 2329/22. We
+thank Evyatar Bluzer, Maurizio Monge, True Price, Ruibin
+Ma, Jonathan Zeltser, Omri Carmi and Jan-Michael Frahm
+for their valuable comments and assistance. </p>
+        </div>
+    </section>
+
+    <!-- Bibtex Section -->
+    <section id="bibtex">
+        <div class="container">
+            <h1>Bibtex</h1>
+            <p>
+                @misc{belder2023game,
+      title={A Game of Bundle Adjustment -- Learning Efficient Convergence}, 
+      author={Amir Belder and Refael Vivanti and Ayellet Tal},
+      year={2023},
+      eprint={2308.13270},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+                .</p>
         </div>
     </section>
 
